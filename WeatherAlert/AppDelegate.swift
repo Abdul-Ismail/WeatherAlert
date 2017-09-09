@@ -14,8 +14,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool
+    {
+        let url = URL(string: "https://api.darksky.net/forecast/bd99e86549d22a6aa4c23831987e22ea/37.8267,-122.4233")!
+        let dataController = DataController(requestedURL: url)
+        
+        dataController.downloadJSONFromURL { (result) in
+            print(result)
+        }
+        
         return true
     }
 

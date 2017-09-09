@@ -12,6 +12,7 @@
 		7B2C6D341F635733000A40D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B2C6D321F635733000A40D2 /* Main.storyboard */; };
 		7B2C6D361F635733000A40D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B2C6D351F635733000A40D2 /* Assets.xcassets */; };
 		7B2C6D391F635733000A40D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B2C6D371F635733000A40D2 /* LaunchScreen.storyboard */; };
+		7B2C6D411F6357CA000A40D2 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2C6D401F6357CA000A40D2 /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		7B2C6D351F635733000A40D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B2C6D381F635733000A40D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B2C6D3A1F635733000A40D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B2C6D401F6357CA000A40D2 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +58,21 @@
 			children = (
 				7B2C6D2E1F635733000A40D2 /* AppDelegate.swift */,
 				7B2C6D301F635733000A40D2 /* ViewController.swift */,
+				7B2C6D421F6357DC000A40D2 /* Model */,
 				7B2C6D321F635733000A40D2 /* Main.storyboard */,
 				7B2C6D351F635733000A40D2 /* Assets.xcassets */,
 				7B2C6D371F635733000A40D2 /* LaunchScreen.storyboard */,
 				7B2C6D3A1F635733000A40D2 /* Info.plist */,
 			);
 			path = WeatherAlert;
+			sourceTree = "<group>";
+		};
+		7B2C6D421F6357DC000A40D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B2C6D401F6357CA000A40D2 /* DataController.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B2C6D311F635733000A40D2 /* ViewController.swift in Sources */,
+				7B2C6D411F6357CA000A40D2 /* DataController.swift in Sources */,
 				7B2C6D2F1F635733000A40D2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

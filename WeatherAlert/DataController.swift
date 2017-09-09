@@ -32,8 +32,10 @@ class DataController {
                 
                 if let httpResponse = response as? HTTPURLResponse {
                     //httpresponse is a response on getting the data
-                    if httpResponse.statusCode == 200
-                    {                        //data obtained
+                    switch httpResponse.statusCode
+                    {
+                    case 200:
+                        //data obtained
                         if let data = data
                           {
                             //pass data into json dictionary 
@@ -46,9 +48,10 @@ class DataController {
                             } catch let error as NSError {
                                  print("Error at mutableContainers\(error.localizedDescription)")
                           }
-                    }else {
-                            print("http response code: \(httpResponse.statusCode)")
-                        }
+                    }
+                        
+                    default:
+                        print("http response code: \(httpResponse.statusCode)")
                     }
                 }
             } else {

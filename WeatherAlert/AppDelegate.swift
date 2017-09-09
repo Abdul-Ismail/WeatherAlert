@@ -23,10 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            print(result)
 //        }
         
-        let forecastSerive = ForecastService(APIKey: "bd99e86549d22a6aa4c23831987e22ea")
-        forecastSerive.getForecast(latitude: 37.8267, longitude: -122.4233) { (currentWeather) in
-            print(currentWeather)
-        }
+//        let forecastSerive = ForecastService(APIKey: "bd99e86549d22a6aa4c23831987e22ea")
+//        forecastSerive.getForecast(latitude: 37.8267, longitude: -122.4233) { (currentWeather) in
+//            print(currentWeather)
+//        }
         
         return true
     }
